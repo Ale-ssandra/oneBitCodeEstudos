@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+#container{
+    height: 100vh;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 10px 15px;
+    grid-auto-rows: minmax(310px , auto);
+  
+}
+.item{
+    border: 1px solid black;
+    background-color: azure;
+    padding: 10px;
+}

@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+
+}
+
+header {
+    width: auto;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoHeader {
+    width: 15em;
+    margin-left: 20px;
+}
+
+nav {
+    margin-right: 20px;
+}
+#textoInicio{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.linksHeader {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+
+}
+#img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+#box1{
+
+gap: 10px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+
+
+}
+.itens{
+    display: grid;
+    padding: 10px;
+  
+    flex-basis: 50px;
+    border: 1px solid black;
+}
+#aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: darkcyan;
+    text-align: center;
+ 
+}
+#imgAside{
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+}
+#principal{
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+
+}
+footer{
+    width: auto;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:375px){
+    #box1{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+   #principal{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   #aside{
+    width: 100%;
+   }
+   #logoHeader{
+    width: 7em;
+   }
+   .linksHeader{
+    font-size: 13px;
+   }
+   #textoInicio > h1  {
+    font-size: 20px;
+    margin-bottom: 10px;
+   }
+   #textoIncio > p {
+    font-size: 15px;
+   }
+}
+
+
+    @media(max-width:425px ) and (min-width:375px){
+        #box1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+           
+        }
+       #principal{
+        display: flex;
+        flex-wrap: wrap;
+       }
+       #aside{
+        width: 100%;
+       }
+       #logoHeader{
+        width: 7em;
+       }
+       .linksHeader{
+        font-size: 13px;
+       }
+       #textoInicio > h1  {
+        font-size: 20px;
+        margin-bottom: 10px;
+       }
+       #textoIncio > p {
+        font-size: 15px;
+       }
+    }
+@media(max-width:625px) and (min-width:425px) {
+    #box1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #principal{
+        display: flex;
+    flex-direction: column;
+    }
+       
+        #aside{
+            width: 100%;
+        }
+        
+        #paragrafo{
+            font-size: 15px;
+        }
+}
+ @media(max-width:768px) and (min-width:624px){
+    #box1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #principal{
+        display: flex;
+      flex-direction: column;
+    }
+    #aside{
+        width: 100%;
+    }
+  
+    .linksHeader{font-size: 25px;}
+ }
+ @media(min-width:770px) and (max-width:1024px) {
+    #aside{
+        width: auto;
+    }
+
+ }
+
+@media(min-width:1025px) and (max-width:1443px) {
+    #aside{
+        width: auto;
+    
+    }
+    #aside> h1{
+        font-size: 30px;
+        
+    }
+    .textoItens{
+        font-size: 25px;
+    }
+}
+@media(min-width:1024px) and (max-width:1335px){
+    #aside{
+        width: auto;
+    }
+
+}
+@media(min-width:1443px){
+    #aside{
+        width: auto;
+    
+    }
+    #aside> h1{
+        font-size: 40px;
+        
+    }
+    .textoItens{
+        font-size: 25px;
+    }
+}
+@media(min-width:2560px){
+    #textoInicio{
+        font-size: 30px;
+    }
+    #aside> h1{
+        font-size: 50px;
+    }
+    .textoItens{
+        font-size: 40px;
+    }
+    .linksHeader{
+        font-size: 40px;
+    }
+    header{
+        height: 200px;
+    }
+  
+    #logoHeader{
+        width: 30rem;
+    }
+   #aside{
+    width: 100%;
+   }
+   .linksHeader{
+    font-size: 30px;
+   }
+}
+
+
+

@@ -1,0 +1,17 @@
+h1{
+    font-family:"Montserrat", sans-serif;
+}
+.data{
+    font-family: "roboto", sans-serif;
+    color:#008080 ;
+}
+.texto{
+    font-family: "Open Sans";
+}
+section{
+    background-color: #fffafa;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 50px;
+}

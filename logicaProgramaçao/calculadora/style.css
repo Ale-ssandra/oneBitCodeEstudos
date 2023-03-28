@@ -1,0 +1,91 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 19px;
+        font-weight: 800;
+        
+        }
+
+        @font-face {
+            font-family: Calculator;
+            src: url(Calculator.ttf);
+        }
+    
+    #Container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100vw;
+        height: 100vh;
+        background-color: #1a2b33;
+    }
+    #box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #calculadora{
+    
+        background-color: rgb(31 53 64);
+        box-shadow: 2px 4px 2px rgb(16 31 41) ;
+        border-radius: 10px;
+        width: 450px;
+        height: 500px;
+        padding: 20px;
+    }
+    #tela{
+        padding: 20px;
+    
+    }
+    #Visor{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        font-size: 25px;
+        border-radius: 10px;
+        background-color:rgb(11 19 26) ;
+        width: 100%;
+        padding: 30px;
+        height: 70px;
+        color: aliceblue;
+        font-family: "Calculator";
+        font-size: 45px;
+        border: 2px solid #353e20e2;
+    }
+    #boxBotoes{
+        background-color: #204050;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 30px;
+        border-radius: 5px;
+    }
+
+    .Botoes{
+        cursor: pointer;
+        box-shadow: 2px 4px 2px rgb(16 31 41) ;
+        border-radius: 10px;
+        width: 70px;
+        height: 50px;
+    }
+
+    .nume{
+        background-color: #DDF6F1;
+    }
+    .operadores{
+        background-color: #e8ad29;
+    }
+    .apagar{
+        background-color: #25c5bb ;
+    }
+    #resetar{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .reset{
+        width: 375px;
+        background-color: #B4067C;
+    }

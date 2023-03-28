@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de cadastro</title>
+  </head>
+  <body>
+    <h1>Cadastro da liga dos astronautas</h1>
+    <strong
+      ><label for="nome">Nome:<input type="text" name="nome" id="nome" /></label
+    ></strong>
+    <br />
+    <br />
+    <strong
+      ><label>Email: <input type="email" name="email" id="email" /></label
+    ></strong>
+    <strong><label for="senha"> Senha:</label></strong>
+    <input type="password" name="senha" id="senha" />
+    <br />
+    <br />
+    <strong><label for="nasc">Data de nascimento</label></strong>
+    <input type="date" name="nasc" id="nasc" />
+    <strong> <label for="foto"> Foto</label></strong>
+    <input type="file" name="arquivo" id="arquivo" />
+    <br />
+    <br />
+    <strong><label for="nacionalidade">Nacionaliade:</label></strong>
+    <select name="nascionalidades" id="nascionalidades">
+      <option
+        value="Brasil
+        "
+      >
+        Brasil
+      </option>
+      <option value="Eua">Eua</option>
+      <option value="Russia">Russia</option>
+    </select>
+    <strong><label for="genero">Genero:</label></strong>
+    <strong><label for="feminino">F</label></strong>
+    <input type="radio" name="gen" id="fem" />
+    <strong><label for="masculinoo">M</label></strong>
+    <input type="radio" name="gen" id="mas" />
+    <strong><p>Suas principais qualidades:</p></strong>
+    <strong> Resistencia fisica</strong>
+    <input type="checkbox" name="quali" id="quali" />
+    <strong>| Raciocinio Logico</strong>
+    <input type="checkbox" name="quali" id="quali" />
+    <strong>| Resiliencia </strong>
+    <input type="checkbox" name="quali" id="quali" />
+    |
+    <br />
+    <br />
+    <textarea name="obs" id="obs" cols="30" rows="10">
+Porque você quer ser um astronauta?</textarea
+    >
+    <br />
+    <input type="submit" value="Cadastro" />
+  </body>
+</html>

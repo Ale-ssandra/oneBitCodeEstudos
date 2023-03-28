@@ -1,0 +1,39 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 500px;
+}
+#icon{
+    width: 50px;
+    height: 50px;
+
+}
+#logo{
+    width: 250px;
+    height: 100px;
+}
+.botoes{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 15%;
+  
+}
+#boxBotoes{
+    display: flex;
+    gap: 10px;
+}
+.botoes:hover{
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}

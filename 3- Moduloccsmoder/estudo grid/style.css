@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 30px;
+}
+#container{
+    display: grid;
+    height: 100vh;
+}
+.item{
+    border: solid 1px black;
+   
+}
+.item6{
+    grid-column: 1/3;
+    background-color: aqua;
+}
