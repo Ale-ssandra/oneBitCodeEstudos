@@ -6,8 +6,8 @@ do {
   switch (menu) {
     case "1":
       function triangulo(base, altura) {
-        base = prompt("Informe a base a ser calculada:");
-        altura = prompt("Informe a altura a ser calculada ?");
+        base = prompt("Informe a base :");
+        altura = prompt("Informe a altura :");
         return console.log(
           "Valor da área do triângulo calculada: " + (base * altura) / 2
         );
@@ -16,8 +16,8 @@ do {
       break;
     case "2":
       function retangulo(base, altura) {
-        base = prompt("Informe o valor da base a ser calculada:")
-        altura = prompt("Informe o valor da altura a ser calculada: ")
+        base = prompt("Informe o valor da base :")
+        altura = prompt("Informe o valor da altura: ")
         return console.log("Valor da área do retângulo: " + base*altura)
     }
     retangulo()
@@ -34,7 +34,7 @@ do {
         function trapezio(baseMaior, baseMenor, altura) {
             baseMaior =parseFloat( prompt("Informe a base maior do trapézio:"))
             baseMenor =parseFloat ( prompt("Informe a base menor do trapézio:"))
-            altura = parseFloat( prompt("Informe o valor da altura a ser calculada: "))
+            altura = parseFloat( prompt("Informe o valor da altura : "))
             return console.log("Valor calculado do trapézio: " + (baseMaior+baseMenor) * altura /2)
             
         }
