@@ -16,43 +16,45 @@ do {
       break;
     case "2":
       function retangulo(base, altura) {
-        base = prompt("Informe o valor da base :")
-        altura = prompt("Informe o valor da altura: ")
-        return console.log("Valor da área do retângulo: " + base*altura)
-    }
-    retangulo()
+        base = prompt("Informe o valor da base :");
+        altura = prompt("Informe o valor da altura: ");
+        return console.log("Valor da área do retângulo: " + base * altura);
+      }
+      retangulo();
 
       break;
     case "3":
-        function quadrado (lado){
-            lado = prompt("Informe tamanho do lado do quadrado:")
-            return console.log("Área do quadradro é : " + lado*lado )
-        }
-        quadrado()
+      function quadrado(lado) {
+        lado = prompt("Informe tamanho do lado do quadrado:");
+        return console.log("Área do quadradro é : " + lado * lado);
+      }
+      quadrado();
       break;
     case "4":
-        function trapezio(baseMaior, baseMenor, altura) {
-            baseMaior =parseFloat( prompt("Informe a base maior do trapézio:"))
-            baseMenor =parseFloat ( prompt("Informe a base menor do trapézio:"))
-            altura = parseFloat( prompt("Informe o valor da altura : "))
-            return console.log("Valor calculado do trapézio: " + (baseMaior+baseMenor) * altura /2)
-            
-        }
-        trapezio()
+      function trapezio(baseMaior, baseMenor, altura) {
+        baseMaior = parseFloat(prompt("Informe a base maior do trapézio:"));
+        baseMenor = parseFloat(prompt("Informe a base menor do trapézio:"));
+        altura = parseFloat(prompt("Informe o valor da altura : "));
+        return console.log(
+          "Valor calculado do trapézio: " +
+            ((baseMaior + baseMenor) * altura) / 2
+        );
+      }
+      trapezio();
       break;
     case "5":
-        function circulo (raio , pi = 3.14){
-            raio = prompt("Informe o valor do raio :")
-            return console.log("Valor área do círculo: " + (raio * raio)* pi)
-        }
-        circulo()
+      function circulo(raio, pi = 3.14) {
+        raio = prompt("Informe o valor do raio :");
+        return console.log("Valor área do círculo: " + raio * raio * pi);
+      }
+      circulo();
       break;
     case "6":
       alert("Saindo...");
       break;
 
     default:
-        alert("Opção invalida.")
+      alert("Opção invalida.");
       break;
   }
 } while (menu !== "6");
