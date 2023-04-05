@@ -6,16 +6,20 @@ do {
   );
   switch (menu) {
     case "1":
+       for (let index = 0; index < vagas.length; index++) {
+        console.log([index], vagas)
+// tentar fazer vagas nova , iniciando variavel vazia la em cima
 
+       }
+        break
     case "2":
         let novaVaga = { nomeVaga: "", descricao: "", data: "" };
         novaVaga.nomeVaga = prompt("Qual nome da vaga?");
         novaVaga.descricao = prompt("Fale um pouco da vaga:");
         novaVaga.data = prompt("Qual data limite: xx-xx-xxxx");
         vagas.push(novaVaga);
-        console.log(vagas);
+        // console.log(vagas);
     
-        
       break;
     case "3":
       break;
