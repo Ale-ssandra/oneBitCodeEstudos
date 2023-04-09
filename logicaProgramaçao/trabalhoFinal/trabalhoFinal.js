@@ -23,14 +23,17 @@ do {
     case "3":
       break;
     case "4":
-      let candidato = {nomeCandidato: "", indice: ""}
-      candidato.nomeCandidato = prompt("Qual nome do candidato?")
-     let numero = candidato.indice = prompt("informe indice")
-      vagas.findIndex(numero) 
+    //   let candidato = {nomeCandidato: "", indice: ""}
+    //   candidato.nomeCandidato = prompt("Qual nome do candidato?")
+    //  let numero = candidato.indice = prompt("informe indice")
+    //   vagas.findIndex(numero) 
 
  // nao deu certo
       break;
     case "5":
+      let indice = prompt("Qual posiçao de vaga voce quer?")
+      parseInt(indice)
+     console.log (vagas.indexOf(indice))
       break;
     case "6":
       alert("Saindo!");
