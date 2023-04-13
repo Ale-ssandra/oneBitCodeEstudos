@@ -1,46 +1,69 @@
-let menu;
-let vagas = [];
-do {
-  menu = prompt(
-    "1- Mostrar vagas disponiveis \n 2- Criar nova vaga \n 3- Visualizar uma vaga \n 4- Candidatar-se a uma vaga \n 5- Excluir vaga \n 6- Sair"
-  );
-  switch (menu) {
-    case "1":
-       for (let index = 0; index < vagas.length; index++) {
-        console.log(index + 1 ,  vagas[index].nomeVaga )
-
-       }
-        break
-    case "2":
-      let novaVaga = { nomeVaga: "", descricao: "", data: "" };
-        novaVaga.nomeVaga = prompt("Qual nome da vaga?");
-        novaVaga.descricao = prompt("Fale um pouco da vaga:");
-        novaVaga.data = prompt("Qual data limite: xx-xx-xxxx");
-        vagas.push(novaVaga);
-        console.log(vagas);
+let vagas = []
+let posiçao = 1;
+let addVagas={}
+const candidatos = []
+function listarVagas() {
+    for (let i = 0; i < vagas.length; i++) {
+      posiçao++
+     
+      
+    }
+    console.log(vagas)
+}
+function criarVaga (){
+    const addVagas = {
+      posiçao: posiçao,
+      nome: prompt("Nome da vaga"),
+      descriçao: prompt("Qual descrição da vaga:"),
+      data: prompt("Data (dd/mm/aaaa)")
+    };
     
-      break;
-    case "3":
-      break;
-    case "4":
-    //   let candidato = {nomeCandidato: "", indice: ""}
-    //   candidato.nomeCandidato = prompt("Qual nome do candidato?")
-    //  let numero = candidato.indice = prompt("informe indice")
-    //   vagas.findIndex(numero) 
-
- // nao deu certo
-      break;
-    case "5":
-      let indice = prompt("Qual posiçao de vaga voce quer?")
-      parseInt(indice)
-     console.log (vagas.indexOf(indice))
-      break;
-    case "6":
-      alert("Saindo!");
-
-      break;
-
-    default:
-      break;
+    vagas.push(addVagas);
+    posiçao++;
+    console.log(vagas);
   }
-} while (menu !== "6");
+  function addCandidado(){
+    let candidato = {nomeCandidato: "",posiçao}
+    candidato.nomeCandidato = prompt("Qual nome do candidato?")
+    
+    vagas[posiçao] = prompt("Qual numero da vaga?")
+    candidatos.push(candidato)
+    vagas.push(candidatos)
+    
+    
+  }
+
+function menu(){
+  do {
+    menu = prompt("1-vagas disponiveis \n 2-criar vaga \n 3-visualizar vaga \n 4- inscrever candidato \n 5-Excluir vaga \n 6- sair ")
+    	 switch (menu) {
+        case "1":
+         listarVagas() 
+          break;
+        case "2":
+          criarVaga()
+          break;
+        case "3":
+          
+          break;
+        case "4":
+        addCandidado()
+          break;
+        case "5":
+          
+          break;
+        case "6":
+          
+          break;
+       
+        default:
+          console.log("Opçao invalida")
+          break;
+       }
+
+
+    
+  } while (menu !== "6");
+    console.log("saindo")
+
+} menu()
