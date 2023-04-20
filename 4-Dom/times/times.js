@@ -1,7 +1,20 @@
+const nome = document.getElementById("nomeJogador");
+const posicao = document.getElementById("escladaTime");
+const camisa = document.getElementById("numeroCamisa");
+
+function excluir() {
+ const removerJog = document.getElementById("excluirjog").value
+ const removendo = document.getElementById("jogador" + camisa)
+
+ const confirmarExcluir = confirm("Deseja exluir jogador" + removendo + "?")
+
+ if(confirmarExcluir){
+  removendo.remove()
+  removerJog.value = ""
+ }
+}
+
 function escalar() {
-  const nome = document.getElementById("nomeJogador");
-  const posicao = document.getElementById("escladaTime");
-  const camisa = document.getElementById("numeroCamisa");
   let confirmar = confirm("Deseja confirmar as informaçoes?");
 
   let ul = document.getElementById("itens");
