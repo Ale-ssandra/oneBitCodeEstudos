@@ -3,16 +3,9 @@ const posicao = document.getElementById("escladaTime");
 const camisa = document.getElementById("numeroCamisa");
 
 function excluir() {
- const removerJog = document.getElementById("excluirjog").value
- const removendo = document.getElementById("jogador" + camisa)
-
- const confirmarExcluir = confirm("Deseja exluir jogador" + removendo + "?")
-
- if(confirmarExcluir){
-  removendo.remove()
-  removerJog.value = ""
+let removerJogador = document.getElementById("numeroCamisa")
  }
-}
+
 
 function escalar() {
   let confirmar = confirm("Deseja confirmar as informaçoes?");
